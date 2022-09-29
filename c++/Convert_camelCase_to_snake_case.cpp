@@ -16,9 +16,9 @@ int main(){
     //we append '_' and the lower case of the capital character to the snake_case string  
     //as per the rules of snake case
     for(char c: camelCase){
-        if(c>=65 && c<=90){//Range of ASCII values of capital letter is [65, 90]
+        if(c>=65 && c<=90){//Range of ASCII values of capital alphabets(A-Z) is [65, 90]
             snake_case += "_";
-            snake_case += c+32;//Add 32 to convert to lower case since the range of ASCII values of lower case is [97, 122]
+            snake_case += c+32;//Add 32 to convert to lower case since the range of ASCII values of lower case alphabets(a-z) is [97, 122]
         }else{
             snake_case += c;
         }
