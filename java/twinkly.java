@@ -44,6 +44,22 @@ public class twinkly {
         return minutes * 60;
     }
 
+    // Count the Number of Duplicate Characters #29
+    public static int getDuplicateCount(String word) {
+        ArrayList<Character> letters = new ArrayList<Character>();
+        int duplicateCount = 0;
+
+        for (int i = 0; i < word.length(); i++) {
+            if (letters.contains(word.charAt(i))) {
+                duplicateCount++;
+            } else {
+                letters.add(word.charAt(i));
+            }
+        }
+
+        return duplicateCount;
+    }
+
     public static void main(String[] args) {
 
         // Print the Sum of Two Numbers
@@ -62,5 +78,8 @@ public class twinkly {
 
         // Print the Number of Seconds in a Minute
         System.out.println(convertMinToSec(3));
+
+        // Print the Number of Duplicate Characters in a Word
+        System.out.println(getDuplicateCount("twinklytwinkly"));
     }
 }
