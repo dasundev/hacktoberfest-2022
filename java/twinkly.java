@@ -30,13 +30,18 @@ public class twinkly {
         return sum;
     }
 
-    //Is the Number Even or Odd? #10
+    // Is the Number Even or Odd? #10
     public static String isEvenOrOdd(int num) {
         if (num % 2 == 0) {
             return "Even";
         } else {
             return "Odd";
         }
+    }
+
+    //Convert Minutes into Seconds #3
+    public static int convertMinToSec(int minutes) {
+        return minutes * 60;
     }
 
     public static void main(String[] args) {
@@ -54,5 +59,8 @@ public class twinkly {
 
         // Print if a Number is Even or Odd
         System.out.println(isEvenOrOdd(3));
+
+        // Print the Number of Seconds in a Minute
+        System.out.println(convertMinToSec(3));
     }
 }
