@@ -27,9 +27,30 @@ public class ch4mi2{
       }
       System.out.println("Elements of the array are: "+Arrays.toString(myArray));
       System.out.println("Sum of the elements of the array :" + sum);
-    
+
+
+/*-------------ISSUE #3 Smallest and largest number of array------------*/
+    int smallest = myArray[0];
+    int largetst = myArray[0];
+
+      for (int i = 1; i < myArray.length; i++) {
+       if (myArray[i] > largetst)
+        largetst = myArray[i];
+       else if (myArray[i] < smallest)
+        smallest = myArray[i];
+      }
+
+      System.out.println("Largest Number is : " + largetst);
+      System.out.println("Smallest Number is : " + smallest); 
+
+/*------------ISSUE #4 Multiply array elements by 2---------------------*/  for(int i=0; i<size; i++){
+          myArray[i] *= 2;
+        
+       }
+      System.out.println("Elements of the array after multiplying by 2: "+Arrays.toString(myArray));    
   }
 }
+  
 
 
     
