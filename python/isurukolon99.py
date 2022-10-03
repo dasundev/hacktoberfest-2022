@@ -1,10 +1,14 @@
-max = int(input("please enter the maximum value : "))
-Oddtotal = 0
+#Find the Smallest and Biggest Numbers
 
-for num in range(1, max + 1):
-    if (num % 2!=0):
-        print("{0}".format(num))
-        Oddtotal = Oddtotal + num
-        
-print("Sum of odd numbers from 1 to {0} = {1}".format(num, Oddtotal))
-        
+def Smallest_and_biggest_number():
+
+    numlist = []
+    number = int(input("Please enter the total numbers of list."))
+    for i in range(1, number+1):
+        value = int(input("Please enter the value of %d element :" %i))
+        numlist.append(value)
+    
+    print("Smallest number is : ",min(numlist))
+    print("Biggest number is : ",max(numlist))
+    
+Smallest_and_biggest_number()
