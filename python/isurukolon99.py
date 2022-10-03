@@ -1,14 +1,15 @@
-#Find the Smallest and Biggest Numbers
+#Find the Largest Number in an Array
 
-def Smallest_and_biggest_number():
-
-    numlist = []
-    number = int(input("Please enter the total numbers of list."))
-    for i in range(1, number+1):
-        value = int(input("Please enter the value of %d element :" %i))
-        numlist.append(value)
-    
-    print("Smallest number is : ",min(numlist))
-    print("Biggest number is : ",max(numlist))
-    
-Smallest_and_biggest_number()
+def largest(arr, n):
+     
+    max = arr[0]
+ 
+    for i in range(1, n):
+        if arr[i] > max:
+            max = arr[i]
+    return max
+ 
+arr = [10, 324, 45, 90, 9808]
+n = len(arr)
+Ans = largest(arr, n)
+print("Largest in given array ", Ans)
