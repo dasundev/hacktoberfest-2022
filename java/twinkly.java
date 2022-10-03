@@ -2,12 +2,12 @@ import java.util.*;
 
 public class twinkly {
 
-    // Return the Sum of Two Numbers
+    // Return the Sum of Two Numbers #1
     public static int findSum(int a, int b) {
         return a + b;
     }
 
-    // How Many Vowels?
+    // How Many Vowels? #22
     public static int getVowelCount(String word) {
         ArrayList<Character> vowels = new ArrayList<Character>(Arrays.asList('a', 'e', 'i', 'o', 'u'));
     
@@ -21,6 +21,15 @@ public class twinkly {
         return vowelCount;
     }
 
+    //Sum of Numbers in an Array #14
+    public static int getArraySum(int[] arr) {
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        return sum;
+    }
+
     public static void main(String[] args) {
 
         // Print the Sum of Two Numbers
@@ -29,5 +38,9 @@ public class twinkly {
 
         //Print the Number of Vowels in a Word
         System.out.println(getVowelCount("twinkly"));
+
+        //Print the sum of an Array
+        int[] arr = {3, 2, 3, 1, 5};
+        System.out.println(getArraySum(arr));
     }
 }
