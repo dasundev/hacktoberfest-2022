@@ -30,6 +30,15 @@ public class twinkly {
         return sum;
     }
 
+    //Is the Number Even or Odd? #10
+    public static String isEvenOrOdd(int num) {
+        if (num % 2 == 0) {
+            return "Even";
+        } else {
+            return "Odd";
+        }
+    }
+
     public static void main(String[] args) {
 
         // Print the Sum of Two Numbers
@@ -42,5 +51,8 @@ public class twinkly {
         //Print the sum of an Array
         int[] arr = {3, 2, 3, 1, 5};
         System.out.println(getArraySum(arr));
+
+        // Print if a Number is Even or Odd
+        System.out.println(isEvenOrOdd(3));
     }
 }
