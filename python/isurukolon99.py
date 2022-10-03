@@ -1,10 +1,15 @@
-max = int(input("please enter the maximum value : "))
-Oddtotal = 0
+#Find the Largest Number in an Array
 
-for num in range(1, max + 1):
-    if (num % 2!=0):
-        print("{0}".format(num))
-        Oddtotal = Oddtotal + num
-        
-print("Sum of odd numbers from 1 to {0} = {1}".format(num, Oddtotal))
-        
+def largest(arr, n):
+     
+    max = arr[0]
+ 
+    for i in range(1, n):
+        if arr[i] > max:
+            max = arr[i]
+    return max
+ 
+arr = [10, 324, 45, 90, 9808]
+n = len(arr)
+Ans = largest(arr, n)
+print("Largest in given array ", Ans)
