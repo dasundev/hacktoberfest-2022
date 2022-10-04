@@ -9,7 +9,14 @@ console.log(`Largest number: ${largestNumber(numbersArray)}`);
 
 //issue: #8 Reverse an Array
 const reverseArray = (arr) => {
-    return arr.reverse();
-  };
-  //test result
-  console.log(`Reverse array: ${reverseArray(numbersArray)}`);
+  return arr.reverse();
+};
+//test result
+console.log(`Reverse array: ${reverseArray(numbersArray)}`);
+
+//issue: #18 Sort Numbers in Descending Order
+const sortNumbersDescending = (arr) => {
+  return arr.sort((a, b) => b - a);
+};
+//test result
+console.log(`Sorted array: ${sortNumbersDescending(numbersArray)}`);
