@@ -20,3 +20,10 @@ const sortNumbersDescending = (arr) => {
 };
 //test result
 console.log(`Sorted array: ${sortNumbersDescending(numbersArray)}`);
+
+//issue: #20 Remove Duplicates from an Array
+const removeDuplicates = (arr) => {
+  return [...new Set(arr)];
+};
+//test result
+console.log(`After remove duplicates: ${removeDuplicates(numbersArray)}`);
