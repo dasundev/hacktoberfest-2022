@@ -6,3 +6,10 @@ const largestNumber = (arr) => {
 };
 //test result
 console.log(`Largest number: ${largestNumber(numbersArray)}`);
+
+//issue: #8 Reverse an Array
+const reverseArray = (arr) => {
+    return arr.reverse();
+  };
+  //test result
+  console.log(`Reverse array: ${reverseArray(numbersArray)}`);
