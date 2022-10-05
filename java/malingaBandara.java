@@ -29,6 +29,8 @@ public class malingaBandara {
         int[] numArray = {2,3,6,7,25,65,43};
         
         System.out.println(FindLargestNumber(numArray));
+
+        System.out.println("Sum of Numbers in an Array: " + SumOfArrayNums(numArray));
     }
 
     // Find the Largest Number in an Array
@@ -43,5 +45,18 @@ public class malingaBandara {
        
        return max;
    }
+
+   // Sum of Numbers in an Array
+   static int SumOfArrayNums(int[] nums){
+         
+    int sum = nums[0];
+    
+    for (int i=1; i<nums.length; i++ ){
+        
+        sum += nums[i];
+    }
+    
+    return sum;
+}
 
 }
