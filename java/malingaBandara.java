@@ -31,6 +31,8 @@ public class malingaBandara {
         System.out.println(FindLargestNumber(numArray));
 
         System.out.println("Sum of Numbers in an Array: " + SumOfArrayNums(numArray));
+
+        ReverseArray(numArray);
     }
 
     // Find the Largest Number in an Array
