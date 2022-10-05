@@ -26,6 +26,22 @@ public class malingaBandara {
       
         System.out.println(EvenOdd(num));
             
+        int[] numArray = {2,3,6,7,25,65,43};
+        
+        System.out.println(FindLargestNumber(numArray));
     }
+
+    // Find the Largest Number in an Array
+    static int FindLargestNumber(int [] nums){
+         
+        int max = nums[0];
+       for (int i=1; i<nums.length; i++ ){
+           if (max < nums[i]){
+               max = nums[i];
+           }
+       }
+       
+       return max;
+   }
 
 }
