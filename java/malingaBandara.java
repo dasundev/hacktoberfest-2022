@@ -61,4 +61,16 @@ public class malingaBandara {
     return sum;
 }
 
+ // Reverse an Array
+ static void ReverseArray(int[] arr){
+         
+    System.out.println("Reversed array is: \n");
+    
+    for(int i=arr.length; i>0; i--){
+        
+        System.out.println(arr[i-1]);
+        
+    }
+
+}
 }
