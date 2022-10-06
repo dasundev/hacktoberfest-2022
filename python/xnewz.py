@@ -1,6 +1,8 @@
 import random
 import operator
 
+from numpy import around
+
 def random_problem():
     operators = {
         '+': operator.add,
@@ -13,6 +15,7 @@ def random_problem():
     num_2 = random.randint(1, 10)
     operation = random.choice(list(operators.keys()))
     answer = operators.get(operation)(num_1, num_2)
+    answer = around(answer, 1)
     print(f'What is {num_1} {operation} {num_2}')
     return answer
 
