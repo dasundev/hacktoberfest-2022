@@ -1,10 +1,10 @@
 #10 - Is the Number Even or Odd? #10
-# num = int(input("Enter a number: "))
-# if (num%2)==0:
-#     print("The number you entered is an Even number")
-# else: print("The number you entered is an Odd number")
+num = int(input("Enter a number: "))
+if (num%2)==0:
+    print("The number you entered is an Even number")
+else: print("The number you entered is an Odd number")
 
-# 13 - Sum Of Odds
+13 - Sum Of Odds
 
 import numbers
 
