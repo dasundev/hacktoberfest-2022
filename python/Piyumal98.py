@@ -1,5 +1,5 @@
 # volume of a cone
-"""height = int(input("Enter the height of the cone : "))
+height = int(input("Enter the height of the cone : "))
 radius = int(input("Enter the radius of the cone : "))
 pie = 3.14285714286 
 
@@ -22,7 +22,7 @@ if __name__ == "__main__":
         A.append(ele)
 
     n = len(A)
-    print("Highest integer is : "+str(findMaxRec(A, n)))"""
+    print("Highest integer is : "+str(findMaxRec(A, n)))
 
 
 # Create a function that takes in a year and returns the correct century
