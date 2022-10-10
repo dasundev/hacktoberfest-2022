@@ -1,5 +1,5 @@
 # volume of a cone
-height = int(input("Enter the height of the cone : "))
+"""height = int(input("Enter the height of the cone : "))
 radius = int(input("Enter the radius of the cone : "))
 pie = 3.14285714286 
 
@@ -39,4 +39,24 @@ def find_century(year):
         print(year // 100 + 1,"century")
 
 year = int(input("Enter a year : "))
-find_century(year)
+find_century(year)"""
+
+
+# Convert Yen to USD
+def display_menu():
+  print("1. Convert Yen to USD")
+  print("2. Exit")
+  
+def Yen_to_USD(value):
+  return value*0.0069
+
+while True:
+  display_menu()
+  choice=int(input())
+  if choice==2:
+    print("Bye!")
+    break
+  else:
+    amount=float(input("Enter an amount in Yen: "))
+    if choice==1:
+      print(amount,"Yen is",Yen_to_USD(amount),"USD")
