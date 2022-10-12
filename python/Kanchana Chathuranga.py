@@ -1,10 +1,10 @@
-#Sum of the Odd Numbers
-value = int(input("please enter the value : "))
-Oddtotal = 0
+#Is the Number Even or Odd?
 
-for num in range(1, value + 1):
-    if (num % 2!=0):
-        print("{0}".format(num))
-        Oddtotal = Oddtotal + num
-        
-print("Sum of odd numbers from 1 to {0} = {1}".format(num, Oddtotal))
+
+n=int(input("Enter number :"))
+r=n%2
+if r==0:
+    print(n,"is even number")
+else:
+    print(n,"is odd number")
+
