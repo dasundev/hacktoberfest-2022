@@ -17,3 +17,10 @@ fi = float(3.14)
 v = (fi * (r**2) * (h/3.0))
 
 print(v)
+
+
+#Find the Largest Number in an Array #16
+
+
+ar=[2,3,4,5,6,7]
+print(" max number",max(ar))
