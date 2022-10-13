@@ -24,3 +24,12 @@ print(v)
 
 ar=[2,3,4,5,6,7]
 print(" max number",max(ar))
+
+
+#Convert Yen to USD #15
+
+ye = float(input("enter yen amount :"))
+
+us = (ye*0.0068)
+
+print("usd price : ",us)
