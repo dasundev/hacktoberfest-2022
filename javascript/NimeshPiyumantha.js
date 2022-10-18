@@ -11,4 +11,4 @@ function checkNumber(argNumber) {
     document.getElementById("result").innerHTML = "Number " + argNumber + " is " + oddOrEven(argNumber);
 }
 
-checkNumber(18);
+checkNumber(21);
