@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+void count(string str1, string str2)
+{
+    int c = 0, j = 0;
+ 
+    
+    for (int i = 0; i < str1.length(); i++) {
+ 
+        
+        if (str2.find(str1[i]) >= 0
+            and j == str1.find(str1[i]))
+            c += 1;
+        j += 1;
+    }
+    cout << "No. of matching characters are: "
+         << c / 2;
+}
+int main()
+{
+    string str1 = "aabcddekll12@";
+    string str2 = "bb2211@55k";
+ 
+    count(str1, str2);
+}
