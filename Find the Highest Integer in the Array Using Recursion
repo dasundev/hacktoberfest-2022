@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+int findSum(int arr[], int N)
+{
+    unordered_map<int, int> mp;
+    for (int i = 0; i < N; i++)
+        mp[arr[i]]++;
+    int maxFreq = 0;
+    for (auto itr = mp.begin(); itr != mp.end(); itr++) {
+        if (itr->second > maxFreq) {
+            maxFreq = itr->second;
+        }
+    }
+    int sum = 0;
+    for (auto itr = mp.begin(); itr != mp.end(); itr++) {
+        if (itr->second == maxFreq) {
+            sum += itr->first * itr->second;
+        }
+    }
+ 
+    return sum;
+}
+ 
+int main()
+{
+    int arr[] = { 1, 1, 2, 2, 2, 2, 3, 3, 3, 3 };
+ 
+    int N = sizeof(arr) / sizeof(arr[0]);
+ 
+    cout << findSum(arr, N);
+ 
+    return 0;
+}
