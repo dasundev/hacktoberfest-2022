@@ -6,4 +6,4 @@ def oddOrEven(num):
     else:
         return "odd"
 
-print(oddOrEven(12434))
+oddOrEven(12434)
