@@ -1,0 +1,36 @@
+import org.apache.pdfbox.multipdf.PDFMergerUtility;
+import org.apache.pdfbox.pdmodel.PDDocument;
+
+import java.io.File;
+import java.io.IOException;
+
+public class GFG {
+
+	public static void main(String[] args)
+		throws IOException
+	{
+
+
+		File file1 = new File(
+			"/Users/piyushkumar/Desktop/Merging Pdfs/file1.pdf");
+		File file2 = new File(
+			"/Users/piyushkumar/Desktop/Merging Pdfs/file2.pdf");
+
+
+		PDFMergerUtility obj = new PDFMergerUtility();
+
+
+		obj.setDestinationFileName(
+			"/Users/piyushkumar/Desktop/Merging Pdfs/newMerged.pdf");
+
+
+		obj.addSource(file1);
+		obj.addSource(file2);
+
+
+		obj.mergeDocuments();
+
+		System.out.println(
+			"PDF Documents merged to a single file");
+	}
+}
