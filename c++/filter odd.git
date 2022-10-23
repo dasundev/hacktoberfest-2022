@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int x;
+	cout<<"enter the amount of numbers:";
+	cin>>x;
+	int num[x];
+	cout<<"enter the numbers:";
+
+	for(int k=0;k<x;k++){
+        cin>>num[k] ;
+	}
+
+
+	for(int m=0; m <x; m++)
+	{
+		if(num[m] % 2 == 1)
+		{
+			cout << num[m] << " ";
+		}
+	}
+
+}
