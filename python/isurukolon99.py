@@ -16,14 +16,6 @@ if (num % 2) == 0:
 
 else:
 
-              print ("The provided number is odd")
-
-Output:
-
-Enter any number to test whether it is odd or even:
-
-887
-
-887 is odd. """
+              print ("The provided number is odd")"""
 
         
