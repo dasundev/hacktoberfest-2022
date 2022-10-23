@@ -1,0 +1,13 @@
+#include <iostream>
+#include <array>
+using namespace std;
+
+int main()
+{
+    array<int,4> arr {20, 30, 40, 50};
+    int lastElement = arr.back();
+
+    cout<<"last element is: "<<lastElement<<endl;
+
+    return 0;
+}
