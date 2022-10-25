@@ -10,7 +10,7 @@ else:
 
 #finding sum of numbers in an array #2
     
-arr = [2, 9, 3, 4, 6];     
+arr = [5, 9, 3, 4, 6];     
 sum = 0;    
      
 #Loop through the array to calculate sum of elements    
@@ -23,7 +23,7 @@ print("Sum of all the elements of an array: " + str(sum));
 #finding largest in an array #3
 
 #Initialize array     
-arr = [25, 11, 7, 113, 56];     
+arr = [6, 11, 7, 113, 56];     
          
 #Initialize max with first element of array.    
 max = arr[0];    
@@ -35,3 +35,12 @@ for i in range(0, len(arr)):
         max = arr[i];    
                
 print("Largest element present in given array: " + str(max));   
+
+#Sorting list of Integers in descending in an array #4
+
+numbers = [2, 53, 11, 565]
+
+# Sorting list of Integers in descending
+numbers.sort(reverse = True)
+  
+print("Numbers sorted in descending order array: " + str(numbers));
