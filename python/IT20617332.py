@@ -10,11 +10,11 @@ else:
 
 #finding sum of numbers in an array #2
     
-arr = [2, 9, 3, 4, 5];     
+arr = [5, 9, 3, 4, 5];     
 sum = 0;    
      
 #Loop through the array to calculate sum of elements    
 for i in range(0, len(arr)):    
    sum = sum + arr[i];    
      
-print("Sum of all the elements of an array: " + str(sum)); 
+print("Sum of all the numbers of the array: " + str(sum)); 
