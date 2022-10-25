@@ -17,7 +17,7 @@ sum = 0;
 for i in range(0, len(arr)):    
    sum = sum + arr[i];    
      
-print("Sum of all the elements of an array: " + str(sum)); 
+print("Sum of all the numbers of the array: " + str(sum)); 
 
 
 #finding largest in an array #3
@@ -34,7 +34,7 @@ for i in range(0, len(arr)):
     if(arr[i] > max):    
         max = arr[i];    
                
-print("Largest element present in given array: " + str(max));   
+print("Largest number present in given array: " + str(max));   
 
 #Sorting list of Integers in descending in an array #4
 
