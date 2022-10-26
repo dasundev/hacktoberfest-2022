@@ -1,0 +1,5 @@
+s = input("Enter String : ")
+print("Original string : ")
+print(s)
+print("After capitalizing first letter : ch")
+print(str.title(s))
