@@ -20,6 +20,22 @@ print(sum)
 FindingVowels = input("Please type a sentence: ")
 print(*map(FindingVowels.lower().count, "aeiou"))
 
+#Find the Largest Number in an Array 
+def largest(array, n):
+ 
+    max = array[0]
+ 
+    for i in range(1, n):
+        if array[i] > max:
+            max = array[i]
+    return max
+ 
+ 
+
+array = [10, 324, 45, 90, 9808]
+n = len(array)
+Answer = largest(array, n)
+print("Largest in given array ", Answer)
 
 
 
