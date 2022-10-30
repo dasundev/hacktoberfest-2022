@@ -15,3 +15,11 @@ sum = 0
 for i in range(1,n+1,2):
     sum+=i
 print(sum)
+           
+#How Many Vowels? 
+FindingVowels = input("Please type a sentence: ")
+print(*map(FindingVowels.lower().count, "aeiou"))
+
+
+
+
