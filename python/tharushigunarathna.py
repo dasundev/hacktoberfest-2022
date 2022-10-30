@@ -8,3 +8,10 @@ if (num % 2) == 0:
 else:
 
               print (“The entered number is odd”)
+
+#Sum of the Odd Numbers				
+num =int(input("Enter n value:"))
+sum = 0
+for i in range(1,n+1,2):
+    sum+=i
+print(sum)
